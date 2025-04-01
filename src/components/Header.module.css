@@ -1,0 +1,174 @@
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #1a1a1a;
+    box-sizing: border-box;
+    flex-wrap: wrap; 
+  }
+  
+  
+  .logoContainer {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .logo {
+    height: 80px;
+    width: auto;
+    filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.5));
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .logo:hover {
+    transform: scale(1.1);
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+  }
+  
+
+  .searchBar {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: #333;
+    color: white;
+    outline: none;
+    width: 200px;
+    margin: 0 15px;
+  }
+  
+  .searchBar::placeholder {
+    color: #bbb;
+  }
+  
+  .categoryButtons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .btn {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    padding: 10px 15px;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn:hover {
+    background: linear-gradient(135deg, #0056b3, #003f7f);
+    transform: scale(1.05);
+  }
+  
+  .btn:active {
+    transform: scale(0.95);
+  }
+  
+  /* Responsive Design for Mobile */
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 15px;
+    }
+  
+    .logo {
+      height: 60px; 
+    }
+  
+    .title {
+      font-size: 20px; 
+    }
+  
+    .categoryButtons {
+      flex-direction: column;
+      gap: 8px;
+      width: 100%;
+      align-items: center;
+    }
+  
+    .btn {
+      width: 90%; 
+      text-align: center;
+    }
+  
+    .searchBar {
+      width: 90%; 
+      margin-top: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .btn {
+      width: 80%; 
+      max-width: 200px; 
+      font-size: 14px; 
+      padding: 10px 15px; 
+    }
+  }
+  
+  .categoryButtons {
+    gap: 8px; /* Reduce spacing between buttons */
+  }
+  
+  .btn {
+    font-size: 14px; /* Reduce text size a little */
+    padding: 10px 15px;
+  }
+  
+  /*  Fix for Footer Overlapping Content */
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-bottom: 80px; /* Ensures footer space is reserved */
+  }
+  
+  .footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #222;
+    text-align: center;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @media (max-width: 600px) {
+    .footer {
+      flex-direction: column;
+      padding: 15px;
+    }
+  }
+  
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  /* Fix Footer Overlap on Small Screens */
+  @media (max-width: 768px) {
+    .app-container {
+      padding-bottom: 100px; /* Increase space for footer */
+    }
+  }

@@ -1,0 +1,126 @@
+/*  Reset page layout */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1a1a1a;
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden; 
+}
+
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-top: 80px; 
+  padding-bottom: 80px; 
+  min-height: 100vh; 
+  box-sizing: border-box;
+}
+
+/* Book Section */
+.book-section {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* Book Container */
+.book-container {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Book Card */
+.book-card {
+  background-color: #333;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  width: 180px;
+  height: 280px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.book-card:hover {
+  transform: scale(1.05);
+}
+
+.book-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/*  Responsive Books */
+@media (max-width: 768px) {
+  .book-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .book-card {
+    width: 90%; 
+    height: auto;
+    margin-bottom: 20px;
+  }
+}
+
+/* Fixed Footer */
+.footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #222;
+  text-align: center;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Footer Adjustments for Small Screens */
+@media (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+    padding: 15px;
+  }
+}
+
+/*  Social Icons */
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  color: white;
+  font-size: 24px;
+  transition: color 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+  color: #007bff;
+}
+
+/*  Prevent Unwanted Page Movement */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; 
+}
