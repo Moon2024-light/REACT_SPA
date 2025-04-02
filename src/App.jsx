@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Header from "./components/Header";
 import BookList from "./components/BooksList";
-import Footer from "./components/footer";
+import Footer from "./components/Footer";
 import { books, categories } from "./data/book"; 
 
 
