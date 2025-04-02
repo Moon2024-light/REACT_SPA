@@ -1,9 +1,8 @@
 import React from "react";
 
 const BookList = ({ books, selectedCategory, searchQuery, searchedBooks }) => {
-  const localBooks = books[selectedCategory] || [];
 
-  
+  const localBooks = books[selectedCategory] || [];
   const displayedBooks = searchQuery ? searchedBooks : localBooks;
 
   return (
