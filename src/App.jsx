@@ -4,8 +4,6 @@ import BookList from "./components/BooksList";
 import Footer from "./components/Footer";
 import { books, categories } from "./data/book"; 
 
-
-
 function App() {
   const [selectedCategory, setSelectedCategory] = useState("Action");
   const [searchQuery, setSearchQuery] = useState("");
