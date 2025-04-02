@@ -4,8 +4,6 @@ import logo from "./assets/images/logo.png";
 import { categories } from "./data/book"; 
 import "./styles.css";  
 
-
-
 export default function LibrarySPA() {
   const [selectedCategory, setSelectedCategory] = useState("All");
 

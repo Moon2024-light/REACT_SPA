@@ -4,7 +4,7 @@ import battlefieldHonor from "../assets/images/battlefield_Honor.jpg";
 import lastStand from "../assets/images/last_Stand.jpg";
 import rescueMission from "../assets/images/rescue_Mission.jpg";
 import shadowWarriors from "../assets/images/shadow_warriors.jpg";
-import ultimateShowdown from "../assets/images/Ultimate_Showdown.jpg";
+import ultimateShowdown from "../assets/images/ultimate_Showdown.jpg";
 import covertStrike from "../assets/images/covert_Strike.jpg";
 import warpath from "../assets/images/warpath.jpg";
 import finalAssault from "../assets/images/final_Assault.jpg";
@@ -73,7 +73,7 @@ const books = {
     { title: "The Last Stand", image: lastStand },
     { title: "Rescue Mission", image: rescueMission },
     { title: "Shadow Warriors", image: shadowWarriors },
-    { title: "Ultimate Showdown", image: ultimateShowdown},
+    { title: "ultimate Showdown", image: ultimateShowdown},
     { title: "Covert Strike", image: covertStrike },
     { title: "Warpath", image: warpath },
     { title: "Final Assault", image: finalAssault },
