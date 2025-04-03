@@ -1,7 +1,6 @@
 import React from "react";
 
 const BookList = ({ books, selectedCategory, searchQuery, searchedBooks }) => {
-
   const localBooks = books[selectedCategory] || [];
   const displayedBooks = searchQuery ? searchedBooks : localBooks;
 
@@ -18,7 +17,7 @@ const BookList = ({ books, selectedCategory, searchQuery, searchedBooks }) => {
             displayedBooks.map((book, index) => (
               <div key={index} className="book-card">
                 <img
-                  src={book.image}
+                  src={`/images/${book.image}`} // ✅ Fixed Path
                   alt={book.title}
                   className="w-full h-48 object-cover rounded mb-2"
                 />
@@ -35,3 +34,4 @@ const BookList = ({ books, selectedCategory, searchQuery, searchedBooks }) => {
 };
 
 export default BookList;
+

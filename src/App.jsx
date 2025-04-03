@@ -2,16 +2,16 @@ import React, { useState, useEffect } from "react";
 import Header from "./components/Header";
 import BookList from "./components/BooksList";
 import Footer from "./components/Footer";
-import { books, categories } from "./data/book"; 
+import { books, categories } from "./data/book";
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState("Action");
   const [searchQuery, setSearchQuery] = useState("");
-  const [searchedBooks, setSearchedBooks] = useState([]); 
+  const [searchedBooks, setSearchedBooks] = useState([]);
 
   useEffect(() => {
     if (searchQuery.trim() === "") {
-      setSearchedBooks([]); 
+      setSearchedBooks([]);
       return;
     }
 
@@ -25,7 +25,7 @@ function App() {
         // Extract book data
         const apiBooks = data.items?.map((item) => ({
           title: item.volumeInfo.title,
-          image: item.volumeInfo.imageLinks?.thumbnail || "https://via.placeholder.com/150",
+          image: item.volumeInfo.imageLinks?.thumbnail || "/images/placeholder.jpg", // Updated for local fallback
         })) || [];
 
         setSearchedBooks(apiBooks);

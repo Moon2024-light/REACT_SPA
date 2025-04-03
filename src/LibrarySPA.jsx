@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import BookList from "./components/BooksList";  
-import logo from "./assets/images/logo.png";  
-import { categories } from "./data/book"; 
+import { categories, books } from "./data/book"; 
 import "./styles.css";  
 
 export default function LibrarySPA() {
@@ -11,7 +10,7 @@ export default function LibrarySPA() {
     <div className="app-container">
       {/* Fixed Header */}
       <header className="header">
-        <img src={logo} alt="Library Logo" className="logo" />
+        <img src="/images/logo.png" alt="Library Logo" className="logo" /> {/* ✅ Fixed Path */}
         <h1>Library SPA</h1>
       </header>
 
@@ -28,11 +27,11 @@ export default function LibrarySPA() {
       {/* Scrollable Book Section */}
       <div className="book-section">
         {selectedCategory === "All" 
-          ? categories.map(category => <BookList key={category} category={category} />) 
-          : <BookList category={selectedCategory} />}
+          ? categories.map(category => <BookList key={category} books={books} selectedCategory={category} />) 
+          : <BookList books={books} selectedCategory={selectedCategory} />}
       </div>
 
-        {/* Fixed Footer */}
+      {/* Fixed Footer */}
       <footer className="footer">
         <p>📚 Library SPA | All Rights Reserved © 2025</p>
       </footer>

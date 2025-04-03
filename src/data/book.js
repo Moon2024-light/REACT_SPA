@@ -1,141 +1,74 @@
-// Importing images for all books
-import darkChase from "../assets/images/dark_Chase.jpg";
-import battlefieldHonor from "../assets/images/battlefield_Honor.jpg";
-import lastStand from "../assets/images/last_Stand.jpg";
-import rescueMission from "../assets/images/rescue_Mission.jpg";
-import shadowWarriors from "../assets/images/shadow_warriors.jpg";
-import ultimateshowdown from "../assets/images/ultimateshowdown.jpg";
-import covertStrike from "../assets/images/covert_Strike.jpg";
-import warpath from "../assets/images/warpath.jpg";
-import finalAssault from "../assets/images/final_Assault.jpg";
-import urbanConflict from "../assets/images/urban_Conflict.jpg";
-import eliteForce from "../assets/images/elite_Force.jpg";
-import rogueOps from "../assets/images/rogue_Ops.jpg";
-
-import loveInParis from "../assets/images/romance.book1.jpg";
-import foreverYours from "../assets/images/romance.book2.jpg";
-import heartsJourney from "../assets/images/romance.book3.png";
-import unbreakableBond from "../assets/images/unbreakable_bond.jpg";
-import moonlightRomance from "../assets/images/moonlight.romance.jpg";
-import lostInLove from "../assets/images/lost_in_love.jpg";
-import timelessAffair from "../assets/images/timeless_Affair.jpg";
-import secretAdmirer from "../assets/images/secret_Admirer.jpg";
-import heartstrings from "../assets/images/heartstrings.jpg";
-import sunsetPromises from "../assets/images/sunset_Promises.jpg";
-import loveUnscripted from "../assets/images/love_Unscripted.jpg";
-import foreverAndAlways from "../assets/images/forever_and_always.jpg";
-
-import secretWhispers from "../assets/images/secret_Whispers.jpg";
-import midnightMystery from "../assets/images/midnight_Mystery.jpg";
-import vanishingPoint from "../assets/images/vanishing_Point.jpg";
-import deadlyPuzzles from "../assets/images/deadly_Puzzles.jpg";
-import hiddenTruth from "../assets/images/hidden_Truth.jpg";
-import finalClue from "../assets/images/final_Clue.jpg";
-import unsolvedCase from "../assets/images/unsolved_Case.jpg";
-import deepSecrets from "../assets/images/deep_Secrets.jpg";
-import crimeLab from "../assets/images/crime_Lab.jpg";
-import forgottenFiles from "../assets/images/forgotten_Files.jpg";
-import beneathTheSurface from "../assets/images/beneath_The_Surface.jpg";
-import coldShadows from "../assets/images/cold_Shadows.jpg";
-
-import enchantedRealm from "../assets/images/Enchanted_Realm.jpg";
-import dragonQuest from "../assets/images/dragon_Quest.jpg";
-import forbiddenMagic from "../assets/images/forbidden_Magic.jpg";
-import mythicalLands from "../assets/images/mythical_Lands.jpg";
-import shadowSorcerer from "../assets/images/shadow_Sorcerer.jpg";
-import eternalKingdom from "../assets/images/eternal_Kingdom.jpg";
-import wizardLegacy from "../assets/images/wizard_Legacy.jpg";
-import celestialWar from "../assets/images/celestial_War.jpg";
-import legendaryTales from "../assets/images/legendary_Tales.jpg";
-import runestoneChronicles from "../assets/images/runestone_Chronicles.jpg";
-import dragonLords from "../assets/images/dragon_Lords.jpg";
-import enchantedProphecy from "../assets/images/enchanted_Prophecy.jpg";
-
-import hauntedManor from "../assets/images/haunted_Manor.jpg";
-import darkProphecy from "../assets/images/dark_Prophecy.jpg";
-import nightmareRealm from "../assets/images/nightmare_Realm.jpg";
-import cursedVillage from "../assets/images/cursed_Village.jpg";
-import shadowedFigures from "../assets/images/shadowed_Figures.jpg";
-import eerieEchoes from "../assets/images/eerie_Echoes.jpg";
-import phantomCurse from "../assets/images/phantom_Curse.jpg";
-import twistedSouls from "../assets/images/twisted_Souls.jpg";
-import abandonedAsylum from "../assets/images/abandoned_Asylum.jpg";
-import sinisterWhispers from "../assets/images/sinister_Whispers.jpg";
-import lostInTheDark from "../assets/images/lost_in_the_dark.jpg";
-import horrorChronicles from "../assets/images/horror_Chronicles.jpg";
-
-// Define book categories
 const categories = ["Action", "Romantic", "Mystery", "Fantasy", "Horror"];
 const books = {
   Action: [
-    { title: "The Dark Chase", image: darkChase },
-    { title: "Battlefield Honor", image: battlefieldHonor },
-    { title: "The Last Stand", image: lastStand },
-    { title: "Rescue Mission", image: rescueMission },
-    { title: "Shadow Warriors", image: shadowWarriors },
-    { title: "ultimate showdown", image: ultimateshowdown},
-    { title: "Covert Strike", image: covertStrike },
-    { title: "Warpath", image: warpath },
-    { title: "Final Assault", image: finalAssault },
-    { title: "Urban Conflict", image: urbanConflict },
-    { title: "Elite Force", image: eliteForce },
-    { title: "Rogue Ops", image: rogueOps },
+    { title: "The Dark Chase", image: "/dark_Chase.jpg"},
+    { title: "Battlefield Honor", image: "/battlefield_Honor.jpg"},
+    { title: "The Last Stand", image: "/last_Stand.jpg"},
+    { title: "Rescue Mission", image: "/rescue_Mission.jpg"},
+    { title: "Shadow Warriors", image: "/shadow_warriors.jpg"},
+    { title: "Ultimate Showdown", image: "/ultimateshowdown.jpg"},
+    { title: "Covert Strike", image: "/covert_Strike.jpg"},
+    { title: "Warpath", image: "/warpath.jpg"},
+    { title: "Final Assault", image: "/final_Assault.jpg"},
+    { title: "Urban Conflict", image: "/urban_Conflict.jpg"},
+    { title: "Elite Force", image: "/elite_Force.jpg"},
+    { title: "Rogue Ops", image: "/rogue_Ops.jpg"},
   ],
   Romantic: [
-    { title: "Love in Paris", image: loveInParis },
-    { title: "Forever Yours", image: foreverYours },
-    { title: "The Heart's Journey", image: heartsJourney },
-    { title: "Unbreakable Bond", image: unbreakableBond },
-    { title: "Moonlight Romance", image: moonlightRomance },
-    { title: "Lost in Love", image: lostInLove },
-    { title: "Timeless Affair", image: timelessAffair },
-    { title: "Secret Admirer", image: secretAdmirer },
-    { title: "Heartstrings", image: heartstrings },
-    { title: "Sunset Promises", image: sunsetPromises },
-    { title: "Love Unscripted", image: loveUnscripted },
-    { title: "Forever and Always", image: foreverAndAlways },
+    { title: "Love in Paris", image: "/romance.book1.jpg"},
+    { title: "Forever Yours", image: "/romance.book2.jpg"},
+    { title: "The Heart's Journey", image: "/romance.book3.png"},
+    { title: "Unbreakable Bond", image: "/unbreakable_bond.jpg"},
+    { title: "Moonlight Romance", image: "/moonlight.romance.jpg"},
+    { title: "Lost in Love", image: "/lost_in_love.jpg"},
+    { title: "Timeless Affair", image: "/timeless_Affair.jpg"},
+    { title: "Secret Admirer", image: "/secret_Admirer.jpg"},
+    { title: "Heartstrings", image: "/heartstrings.jpg"},
+    { title: "Sunset Promises", image: "/sunset_Promises.jpg"},
+    { title: "Love Unscripted", image: "/love_Unscripted.jpg"},
+    { title: "Forever and Always", image: "/forever_and_always.jpg"},
   ],
   Mystery: [
-    { title: "Secret Whispers", image: secretWhispers },
-    { title: "Midnight Mystery", image: midnightMystery },
-    { title: "Vanishing Point", image: vanishingPoint },
-    { title: "Deadly Puzzles", image: deadlyPuzzles },
-    { title: "Hidden Truth", image: hiddenTruth },
-    { title: "Final Clue", image: finalClue },
-    { title: "Unsolved Case", image: unsolvedCase },
-    { title: "Deep Secrets", image: deepSecrets },
-    { title: "Crime Lab", image: crimeLab },
-    { title: "Forgotten Files", image: forgottenFiles },
-    { title: "Beneath the Surface", image: beneathTheSurface },
-    { title: "Cold Shadows", image: coldShadows },
+    { title: "Secret Whispers", image: "/secret_Whispers.jpg"},
+    { title: "Midnight Mystery", image: "/midnight_Mystery.jpg"},
+    { title: "Vanishing Point", image: "/vanishing_Point.jpg"},
+    { title: "Deadly Puzzles", image: "/deadly_Puzzles.jpg"},
+    { title: "Hidden Truth", image: "/hidden_Truth.jpg"},
+    { title: "Final Clue", image: "/final_Clue.jpg"},
+    { title: "Unsolved Case", image: "/unsolved_Case.jpg"},
+    { title: "Deep Secrets", image: "/deep_Secrets.jpg"},
+    { title: "Crime Lab", image: "/crime_Lab.jpg"},
+    { title: "Forgotten Files", image: "/forgotten_Files.jpg"},
+    { title: "Beneath the Surface", image: "/beneath_The_Surface.jpg"},
+    { title: "Cold Shadows", image: "/cold_Shadows.jpg"},
   ],
   Fantasy: [
-    { title: "Enchanted Realm", image: enchantedRealm },
-    { title: "Dragon Quest", image: dragonQuest },
-    { title: "Forbidden Magic", image: forbiddenMagic },
-    { title: "Mythical Lands", image: mythicalLands },
-    { title: "Shadow Sorcerer", image: shadowSorcerer },
-    { title: "Eternal Kingdom", image: eternalKingdom },
-    { title: "Wizard's Legacy", image: wizardLegacy },
-    { title: "Celestial War", image: celestialWar },
-    { title: "Legendary Tales", image: legendaryTales },
-    { title: "Runestone Chronicles", image: runestoneChronicles },
-    { title: "Dragon Lords", image: dragonLords },
-    { title: "Enchanted Prophecy", image: enchantedProphecy },
+    { title: "Enchanted Realm", image: "/Enchanted_Realm.jpg"},
+    { title: "Dragon Quest", image: "/Dragon_Quest.jpg"},
+    { title: "Forbidden Magic", image: "/Forbidden_Magic.jpg"},
+    { title: "Mythical Lands", image: "/Mythical_Lands.jpg"},
+    { title: "Shadow Sorcerer", image: "/Shadow_Sorcerer.jpg"},
+    { title: "Eternal Kingdom", image: "/Eternal_Kingdom.jpg"},
+    { title: "Wizard's Legacy", image: "/wizard_Legacy.jpg"},
+    { title: "Celestial War", image: "/celestial_War.jpg"},
+    { title: "Legendary Tales", image: "/legendary_Tales.jpg"},
+    { title: "Runestone Chronicles", image:"/runestone_Chronicles.jpg"},
+    { title: "Dragon Lords", image: "/dragon_Lords.jpg"},
+    { title: "Enchanted Prophecy", image: "/enchanted_Prophecy.jpg"},
   ],
   Horror: [
-    { title: "Haunted Manor", image: hauntedManor },
-    { title: "Dark Prophecy", image: darkProphecy },
-    { title: "Nightmare Realm", image: nightmareRealm },
-    { title: "Cursed Village", image: cursedVillage },
-    { title: "Shadowed Figures", image: shadowedFigures },
-    { title: "Eerie Echoes", image: eerieEchoes },
-    { title: "Phantom Curse", image: phantomCurse },
-    { title: "Twisted Souls", image: twistedSouls },
-    { title: "Abandoned Asylum", image: abandonedAsylum },
-    { title: "Sinister Whispers", image: sinisterWhispers },
-    { title: "Lost in the Dark", image: lostInTheDark },
-    { title: "Horror Chronicles", image: horrorChronicles },
+    { title: "Haunted Manor", image: "/Haunted_Manor.jpg"},
+    { title: "Dark Prophecy", image: "/Dark_Prophecy.jpg"},
+    { title: "Nightmare Realm", image: "/Nightmare_Realm.jpg"},
+    { title: "Cursed Village", image: "/Cursed_Village.jpg"},
+    { title: "Shadowed Figures", image: "/Shadowed_Figures.jpg"},
+    { title: "Eerie Echoes", image: "/Eerie_Echoes.jpg"},
+    { title: "Phantom Curse", image: "/phantom_Curse.jpg"},
+    { title: "Twisted Souls", image: "/twisted_Souls.jpg"},
+    { title: "Abandoned Asylum", image: "/abandoned_Asylum.jpg"},
+    { title: "Sinister Whispers", image: "/sinister_Whispers.jpg"},
+    { title: "Lost in the Dark", image: "/lost_in_the_dark.jpg"},
+    { title: "Horror Chronicles", image: "/horror_Chronicles.jpg"},
   ],
 };
 
