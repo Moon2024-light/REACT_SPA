@@ -29,7 +29,7 @@ import secretWhispers from "../assets/images/secret_Whispers.jpg";
 import midnightMystery from "../assets/images/midnight_Mystery.jpg";
 import vanishingPoint from "../assets/images/vanishingPoint.jpg";
 import deadlyPuzzles from "../assets/images/deadlyPuzzles.jpg";
-import hiddenTruth from "../assets/images/hiddenTruth.jpg";
+import HiddenTruth from "../assets/images/HiddenTruth.jpg";
 import finalClue from "../assets/images/finalClue.jpg";
 import unsolvedCase from "../assets/images/unsolved_Case.jpg";
 import deepSecrets from "../assets/images/deep_Secrets.jpg";
@@ -100,8 +100,8 @@ const books = {
     { title: "Midnight Mystery", image: midnightMystery },
     { title: "Vanishing Point", image: vanishingPoint },
     { title: "Deadly Puzzles", image: deadlyPuzzles },
-    { title: "Hidden Truth", image: hiddenTruth },
-    { title: "Final Clue", image: finalClue },
+    { title: "Hidden Truth", image: HiddenTruth },
+    { title: "finalClue", image: finalClue },
     { title: "Unsolved Case", image: unsolvedCase },
     { title: "Deep Secrets", image: deepSecrets },
     { title: "Crime Lab", image: crimeLab },
