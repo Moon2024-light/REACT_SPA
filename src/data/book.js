@@ -9,7 +9,7 @@ import covertStrike from "../assets/images/covert_Strike.jpg";
 import warpath from "../assets/images/celestial_War.jpg"; 
 import finalAssault from "../assets/images/final_Assault.jpg";
 import urbanConflict from "../assets/images/urban_Conflict.jpg";
-import eliteForce from "../assets/images/elite_Force.jpg";
+import eliteforce from "../assets/images/elite_force.jpg";
 import rogueOps from "../assets/images/rogue_Ops.jpg";
 
 
@@ -79,7 +79,7 @@ const books = {
     { title: "Warpath", image: warpath },
     { title: "Final Assault", image: finalAssault },
     { title: "Urban Conflict", image: urbanConflict },
-    { title: "elite Force", image: eliteForce },
+    { title: "elite force", image: eliteforce},
     { title: "Rogue Ops", image: rogueOps },
   ],
   Romantic: [
