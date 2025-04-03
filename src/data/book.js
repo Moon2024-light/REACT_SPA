@@ -40,7 +40,7 @@ import beneathTheSurface from "../assets/images/beneath_The_Surface.jpg";
 import coldShadows from "../assets/images/cold_Shadows.jpg";
 
 import enchantedRealm from "../assets/images/Enchanted_Realm.jpg";
-import dragonQuest from "../assets/images/dragon_Quest.jpg";
+import DragonQuest from "../assets/images/Dragon_Quest.jpg";
 import forbiddenMagic from "../assets/images/forbidden_Magic.jpg";
 import mythicalLands from "../assets/images/mythical_Lands.jpg";
 import shadowSorcerer from "../assets/images/shadow_Sorcerer.jpg";
@@ -112,7 +112,7 @@ const books = {
   ],
   Fantasy: [
     { title: "Enchanted Realm", image: enchantedRealm },
-    { title: "Dragon Quest", image: dragonQuest },
+    { title: "Dragon Quest", image: DragonQuest },
     { title: "Forbidden Magic", image: forbiddenMagic },
     { title: "Mythical Lands", image: mythicalLands },
     { title: "Shadow Sorcerer", image: shadowSorcerer },
