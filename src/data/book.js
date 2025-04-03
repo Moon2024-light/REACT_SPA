@@ -12,6 +12,7 @@ import urbanConflict from "../assets/images/urban_Conflict.jpg";
 import eliteForce from "../assets/images/elite_Force.jpg";
 import rogueOps from "../assets/images/rogue_Ops.jpg";
 
+
 import loveInParis from "../assets/images/romance.book1.jpg";
 import foreverYours from "../assets/images/romance.book2.jpg";
 import heartsJourney from "../assets/images/romance.book3.png";
@@ -78,7 +79,7 @@ const books = {
     { title: "Warpath", image: warpath },
     { title: "Final Assault", image: finalAssault },
     { title: "Urban Conflict", image: urbanConflict },
-    { title: "Elite Force", image: eliteForce },
+    { title: "elite Force", image: eliteForce },
     { title: "Rogue Ops", image: rogueOps },
   ],
   Romantic: [
