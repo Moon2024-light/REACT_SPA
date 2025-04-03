@@ -10,7 +10,7 @@ export default function LibrarySPA() {
     <div className="app-container">
       {/* Fixed Header */}
       <header className="header">
-        <img src="/images/logo.png" alt="Library Logo" className="logo" /> {/* ✅ Fixed Path */}
+        <img src="/images/logo.png" alt="Library Logo" className="logo" /> 
         <h1>Library SPA</h1>
       </header>
 

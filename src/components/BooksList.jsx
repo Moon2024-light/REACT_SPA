@@ -17,7 +17,7 @@ const BookList = ({ books, selectedCategory, searchQuery, searchedBooks }) => {
             displayedBooks.map((book, index) => (
               <div key={index} className="book-card">
                 <img
-                  src={`/images/${book.image}`} // ✅ Fixed Path
+                  src={`/images/${book.image}`} 
                   alt={book.title}
                   className="w-full h-48 object-cover rounded mb-2"
                 />

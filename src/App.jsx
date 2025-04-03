@@ -25,7 +25,7 @@ function App() {
         // Extract book data
         const apiBooks = data.items?.map((item) => ({
           title: item.volumeInfo.title,
-          image: item.volumeInfo.imageLinks?.thumbnail || "/images/placeholder.jpg", // Updated for local fallback
+          image: item.volumeInfo.imageLinks?.thumbnail || "/images/placeholder.jpg", 
         })) || [];
 
         setSearchedBooks(apiBooks);
