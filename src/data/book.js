@@ -9,13 +9,13 @@ import covertStrike from "../assets/images/covert_Strike.jpg";
 import warpath from "../assets/images/celestial_War.jpg"; 
 import finalAssault from "../assets/images/final_Assault.jpg";
 import urbanConflict from "../assets/images/urban_Conflict.jpg";
-import eliteForce from "../assets/images/elite_Force.jpg";
+import EliteForce from "../assets/images/Elite_Force.jpg";
 import rogueOps from "../assets/images/rogue_Ops.jpg";
 
 import loveInParis from "../assets/images/romance.book1.jpg";
 import foreverYours from "../assets/images/romance.book2.jpg";
 import heartsJourney from "../assets/images/romance.book3.png";
-import unbreakableBond from "../assets/images/unbreakable_bond.jpg";
+import unbreakablebond from "../assets/images/unbreakable_bond.jpg";
 import moonlightRomance from "../assets/images/moonlight.romance.jpg";
 import lostInLove from "../assets/images/lost_in_love.jpg";
 import timelessAffair from "../assets/images/timeless_Affair.jpg";
@@ -29,7 +29,7 @@ import secretWhispers from "../assets/images/secret_Whispers.jpg";
 import midnightMystery from "../assets/images/midnight_Mystery.jpg";
 import vanishingPoint from "../assets/images/vanishingPoint.jpg";
 import deadlyPuzzles from "../assets/images/deadlyPuzzles.jpg";
-import hiddenTruth from "../assets/images/HiddenTruth.jpg";
+import hiddenTruth from "../assets/images/hiddenTruth.jpg";
 import finalClue from "../assets/images/finalClue.jpg";
 import unsolvedCase from "../assets/images/unsolved_Case.jpg";
 import deepSecrets from "../assets/images/deep_Secrets.jpg";
@@ -78,14 +78,14 @@ const books = {
     { title: "Warpath", image: warpath },
     { title: "Final Assault", image: finalAssault },
     { title: "Urban Conflict", image: urbanConflict },
-    { title: "Elite Force", image: eliteForce },
+    { title: "Elite Force", image: EliteForce },
     { title: "Rogue Ops", image: rogueOps },
   ],
   Romantic: [
     { title: "Love in Paris", image: loveInParis },
     { title: "Forever Yours", image: foreverYours },
     { title: "The Heart's Journey", image: heartsJourney },
-    { title: "Unbreakable Bond", image: unbreakableBond },
+    { title: "unbreakablebond", image: unbreakablebond },
     { title: "Moonlight Romance", image: moonlightRomance },
     { title: "Lost in Love", image: lostInLove },
     { title: "Timeless Affair", image: timelessAffair },
@@ -120,7 +120,7 @@ const books = {
     { title: "Celestial War", image: celestialWar },
     { title: "Legendary Tales", image: legendaryTales },
     { title: "Runestone Chronicles", image: runestoneChronicles },
-    { title: "Dragon Lords", image: dragonLords },
+    { title: "dragon Lords", image: dragonLords },
     { title: "Enchanted Prophecy", image: enchantedProphecy },
   ],
   Horror: [
