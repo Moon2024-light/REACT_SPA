@@ -2,16 +2,16 @@ import React, { useState, useEffect } from "react";
 import Header from "./components/Header";
 import BookList from "./components/BooksList";
 import Footer from "./components/Footer";
-import { books, categories } from "./data/book";
+import { books, categories } from "./data/book";  
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState("Action");
   const [searchQuery, setSearchQuery] = useState("");
-  const [searchedBooks, setSearchedBooks] = useState([]);
+  const [searchedBooks, setSearchedBooks] = useState([]); 
 
   useEffect(() => {
     if (searchQuery.trim() === "") {
-      setSearchedBooks([]);
+      setSearchedBooks([]); 
       return;
     }
 
@@ -22,19 +22,19 @@ function App() {
         );
         const data = await response.json();
         
-        // Extract book data
+        // Extract book data from the API response
         const apiBooks = data.items?.map((item) => ({
           title: item.volumeInfo.title,
-          image: item.volumeInfo.imageLinks?.thumbnail || "/images/placeholder.jpg", 
+          image: item.volumeInfo.imageLinks?.thumbnail || "https://via.placeholder.com/150",  
         })) || [];
 
-        setSearchedBooks(apiBooks);
+        setSearchedBooks(apiBooks);  
       } catch (error) {
         console.error("Error fetching books:", error);
       }
     };
 
-    fetchBooks();
+    fetchBooks();  
   }, [searchQuery]);
 
   return (
@@ -45,12 +45,12 @@ function App() {
         setSearchQuery={setSearchQuery} 
       />
 
-      {/* Pass both local books & searched books */}
+      {/* Pass both local books & searched books to BookList component */}
       <BookList 
-        books={books} 
+        books={books}  
         selectedCategory={selectedCategory} 
         searchQuery={searchQuery} 
-        searchedBooks={searchedBooks} 
+        searchedBooks={searchedBooks}  // Books from API search
       />
 
       <Footer />

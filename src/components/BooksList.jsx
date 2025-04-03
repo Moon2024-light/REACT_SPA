@@ -1,3 +1,4 @@
+// components/BooksList.jsx
 import React from "react";
 
 const BookList = ({ books, selectedCategory, searchQuery, searchedBooks }) => {
@@ -16,8 +17,9 @@ const BookList = ({ books, selectedCategory, searchQuery, searchedBooks }) => {
           {displayedBooks.length > 0 ? (
             displayedBooks.map((book, index) => (
               <div key={index} className="book-card">
+                {/* Display image */}
                 <img
-                  src={`/images/${book.image}`} 
+                  src={book.image}  
                   alt={book.title}
                   className="w-full h-48 object-cover rounded mb-2"
                 />
@@ -34,4 +36,3 @@ const BookList = ({ books, selectedCategory, searchQuery, searchedBooks }) => {
 };
 
 export default BookList;
-
